@@ -14,3 +14,21 @@ The quote databse is stored in `/storage/quotes_all.csv` and the format is:
 ```
 QUOTE;AUTHOR;GENRE
 ```
+
+## Notes
+
+### Uberspace SQLite Problem
+
+Sqlite needs some special attention on Uberspace servers. [Source](https://wiki.uberspace.de/development:nodejs#sqlite3)
+
+Put the following into the `.bashrc` or `.zshrc`
+
+```
+export TMPDIR=`mktemp -d /tmp/XXXXXX`
+```
+
+and install sqlite3 via:
+
+```
+npm install sqlite3 --build-from-source
+```

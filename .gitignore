@@ -1,0 +1,27 @@
+# System and Cache files
+.sass-cache
+.vagrant
+.DS_Store
+.migrate
+.build_cache~
+.timestamp_cache~
+.nodemonignore
+
+# Developing with SublimeText? Ignore these.
+*.sublime-project
+*.sublime-workspace
+
+# NodeJS Standard
+bower_components/
+node_modules/
+
+# Keep folder structures but no files in this folders.
+/dist/**/*
+/tmp/**/*
+
+# Do not track active config but track config.example.coffee
+config*.coffee
+!config.*.coffee
+
+# Storage
+/storage/**/*

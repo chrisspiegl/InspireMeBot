@@ -303,15 +303,15 @@ cronJob = schedule.scheduleJob('0 0 * * * *', () ->
     # 6  17 10 13 8 20 22
     if hour is 17
       intervals = _.union intervals, [1]
-    if hour in [17, 5]
+    if hour in [17, 10]
       intervals = _.union intervals, [2]
-    if hour in [17, 9, 1]
+    if hour in [17, 10, 13]
       intervals = _.union intervals, [3]
-    if hour in [17, 5, 11, 2]
+    if hour in [17, 10, 13, 9]
       intervals = _.union intervals, [4]
-    if hour in [17, 22, 3, 8, 13]
+    if hour in [17, 10, 13, 9, 20]
       intervals = _.union intervals, [5]
-    if hour in [17, 21, 1, 5, 9, 13]
+    if hour in [17, 10, 13, 9, 20, 22]
       intervals = _.union intervals, [6]
 
     User.findAll({where: {interval: intervals, timeZone: timeZone}}).then((users) ->

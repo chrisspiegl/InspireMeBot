@@ -1,0 +1,12 @@
+[
+  {
+    "name": "InspireMeBot",
+    "script": "./index.coffee",
+    "args": [],
+    "exec_mode": "cluster_mode",
+    "instances": "1",
+    "error_file": "./tmp/pm2-error.log",
+    "out_file": "./tmp/pm2-out.log",
+    "NODE_ENV": "production"
+  }
+]

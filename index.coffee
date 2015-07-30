@@ -314,7 +314,7 @@ cronJob = schedule.scheduleJob('0 0 * * * *', () ->
     if hour in [17, 10, 13, 9, 20, 22]
       intervals = _.union intervals, [6]
 
-    User.findAll({where: {interval: intervals, timeZone: timeZone}}).then((users) ->
+    User.findAll({where: {interval: intervals, timeZone: timeZone, subscribed: true}}).then((users) ->
       userIds = _.pluck users, 'id'
       Quote.rand('Inspirational').then((quote) ->
         message = new BulkMessage().text("""

@@ -1,5 +1,13 @@
 # InspireMeBot
 
+![current status](https://img.shields.io/badge/current%20status-halted-red?style=flat-square)
+
+## Halted Project
+
+I lost motivation to work on this for now. The code is here if you want to take a look.
+
+## About
+
 InspireMeBot will give you inspiring quotes on a daily basis. It is easy and uplifting!
 
 You can add this bot via this link: https://telegram.me/InspireMeBot
